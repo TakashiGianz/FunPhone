@@ -1,0 +1,61 @@
+.usersList {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+}
+
+.usersList__item {
+  color: var(--white);
+  font-family: Poppins, sans-serif;
+  font-size: 2rem;
+  margin: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.usersList__item__img {
+  background-size: cover;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+}
+
+.usersList__item__img--user1 {
+  background-image: url(/assets/img/pp.jpg);
+}
+
+.usersList__item__img--user2 {
+  background-image: url(/assets/img/fabio.jpg);
+}
+
+.usersList__item__img--user3 {
+  background-image: url(/assets/img/fe.jpg);
+}
+
+.usersList__item__img--user4 {
+  background-image: url(/assets/img/ellen.jpg);
+}
+
+.usersList__item__img--user5 {
+  background-image: url(/assets/img/Mari.jpg);
+}
+
+.usersList__item__img--user6 {
+  background-image: url(/assets/img/anonymous-avatar-icon-25.jpg);
+}
+
+@media (max-width: 1024px) {
+  .usersList {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .usersList__item {
+    margin-top: 5rem;
+  }
+}
