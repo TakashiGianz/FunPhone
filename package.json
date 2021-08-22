@@ -1,0 +1,25 @@
+{
+  "name": "funphone",
+  "version": "0.0.0",
+  "description": "",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "nodemon api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TakashiGianz/FunPhone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TakashiGianz/FunPhone/issues"
+  },
+  "homepage": "https://github.com/TakashiGianz/FunPhone#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
