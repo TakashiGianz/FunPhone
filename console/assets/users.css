@@ -26,27 +26,27 @@
 }
 
 .usersList__item__img--user1 {
-  background-image: url(/assets/img/pp.jpg);
+  background-image: url(img/pp.jpg);
 }
 
 .usersList__item__img--user2 {
-  background-image: url(/assets/img/fabio.jpg);
+  background-image: url(img/fabio.jpg);
 }
 
 .usersList__item__img--user3 {
-  background-image: url(/assets/img/fe.jpg);
+  background-image: url(img/fe.jpg);
 }
 
 .usersList__item__img--user4 {
-  background-image: url(/assets/img/ellen.jpg);
+  background-image: url(img/ellen.jpg);
 }
 
 .usersList__item__img--user5 {
-  background-image: url(/assets/img/Mari.jpg);
+  background-image: url(img/Mari.jpg);
 }
 
 .usersList__item__img--user6 {
-  background-image: url(/assets/img/anonymous-avatar-icon-25.jpg);
+  background-image: url(img/anonymous-avatar-icon-25.jpg);
 }
 
 @media (max-width: 1024px) {
