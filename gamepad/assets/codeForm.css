@@ -32,6 +32,10 @@
   font-family: Poppins, sans-serif;
 }
 
+.username__input:focus{
+  outline: none;
+}
+
 .roomCode{
   display: flex;
   flex-direction: column;
