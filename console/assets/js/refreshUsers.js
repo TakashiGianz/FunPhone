@@ -10,3 +10,5 @@ const usersArray = await getUsers();
 const refreshUsers = () => console.log(usersArray);
 
 // setInterval( refreshUsers, 1000)
+
+export default usersArray;
