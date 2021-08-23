@@ -26,7 +26,7 @@
     </header>
     <main>
       <div class="codeBox">
-        <p class="codeBox__code">00000000</p>
+        <p class="codeBox__code" >00000000</p>
       </div>
       <section class="usersList">
         <div class="usersList__item">
@@ -55,21 +55,6 @@
         </div>
       </section>
     </main>
-    <script type="module" defer>
-
-      const getRoom = async() => {
-        const response = await fetch("http://localhost:3000/api", {method: "GET"})
-        const room = await response.json()
-        const roomId = room.sala
-        return roomId
-      }
-
-      const roomId = await getRoom() 
-
-      const codeBox = document.querySelector('.codeBox__code')
-
-      codeBox.textContent = roomId
-
-    </script>
+    <script type="module" defer src="script.js"></script>
   </body>
 </html>

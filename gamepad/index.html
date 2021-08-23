@@ -14,19 +14,44 @@
     <link rel="stylesheet" href="assets/global.css" />
     <link rel="stylesheet" href="assets/style.css" />
     <link rel="stylesheet" href="assets/users.css" />
-    <link rel="stylesheet" href="assets/inputBox.css" />
+    <link rel="stylesheet" href="assets/codeForm.css" />
     <title>FunPhone</title>
   </head>
   <body class="background">
     <header class="upperText">
       <h1 class="upperText__title">FunPhone</h1>
-      <p class="upperText__subtitle">
-        Enter Room Code
-      </p>
     </header>
     <main>
-          <input class="inputCodeBox" type="number" name="inputCodeBox" placeholder="00000000">
-          <button for="inputCodeBox"> </button>
+      <form class="codeForm">
+        <div class="username">
+          <label class="username__label" for="username">
+            Username:
+          </label>
+          <input
+            type="text"
+            name="Username"
+            id="username"
+            placeholder="Type your Username"
+            class="username__input"
+            maxlength="12"
+            required
+          />
+        </div>
+        <div class="roomCode">
+        <label class="roomCode__label" for="roomCode">
+          Enter Room Code:
+        </label>
+        <input
+          class="roomCode__input"
+          type="number"
+          name="roomCode"
+          id="roomCode"
+          placeholder="00000000"
+          required
+        />
+      </div>
+        <button class="roomCode__button">GO</button>
+      </form>
     </main>
   </body>
 </html>

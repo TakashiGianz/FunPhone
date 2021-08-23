@@ -9,7 +9,7 @@ app.use("/", express.static("console"));
 app.use("/mobile", express.static("gamepad"));
 
 app.get("/api", (req, res) => {
-  res.json({ sala: "12345678" });
+  res.json({ sala: "22334455" });
 });
 
 app.post("/api", (req, res) => {
