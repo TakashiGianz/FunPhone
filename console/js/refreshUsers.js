@@ -24,7 +24,6 @@ const gettingNewIds = async () => {
   }
   return newIds;
 };
-
 const newIds = await gettingNewIds();
 
 const gettingIds = async () => {
