@@ -71,9 +71,9 @@
   font-family: Poppins, sans-serif;
   font-weight: bold;
   background-color: var(--orange);
-  height: 9.8rem;
-  border-radius: 100%;
-  width: 10rem;
+  height: 5rem;
+  border-radius: 10%;
+  width: 15rem;
   box-shadow: 0.5rem 0.5rem 2rem grey;
 }
 
