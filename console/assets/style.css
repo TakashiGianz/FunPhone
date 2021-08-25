@@ -3,14 +3,13 @@
   background-image: url(img/Background.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  height: calc(100vh - 15rem);
+  height: 100vh;
 }
 
 .upperText {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 13rem;
 }
 
 .upperText__title {

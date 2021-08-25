@@ -12,24 +12,24 @@ app.get("/api", (req, res) => {
     sala: "22334455",
     usersOn: [
       {
-        "name": "Fernando",
-        "avatar": "/img/fe.jpg"
+        name: "Fernando",
+        avatar: "/img/fe.jpg",
       },
       {
-        "name": "Camila",
-        "avatar": "/img/pp.jpg"
+        name: "Camila",
+        avatar: "/img/pp.jpg",
       },
       {
-        "name": "Fabio",
-        "avatar": "/img/fabio.jpg"
+        name: "Fabio",
+        avatar: "/img/fabio.jpg",
       },
       {
-        "name": "Ellen",
-        "avatar": "/img/ellen.jpg"
+        name: "Ellen",
+        avatar: "/img/ellen.jpg",
       },
       {
-        "name": "Mariane",
-        "avatar": "/img/Mari.jpg"
+        name: "Mariane",
+        avatar: "/img/Mari.jpg",
       },
     ],
   });

@@ -16,7 +16,7 @@
 }
 
 .usersList__item__img {
-  background-size: cover;
+  object-fit: cover;
   width: 8rem;
   height: 8rem;
   margin: 0 auto;
