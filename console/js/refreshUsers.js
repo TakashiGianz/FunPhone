@@ -7,7 +7,7 @@ const getUsers = async () => {
   return users;
 };
 
-// setInterval(getUsers, 1000)
+setInterval(getUsers, 1000)
 
 const usersArray = await getUsers();
 
@@ -16,8 +16,6 @@ const updateUsers = () => {
     newUser(usersArray[i].avatar, usersArray[i].name, usersArray[i].id);
   }
 };
-
-updateUsers()
 
 const gettingNewIds = async () => {
   const newIds = []
@@ -28,7 +26,6 @@ const gettingNewIds = async () => {
 };
 
 const newIds = await gettingNewIds();
-
 
 const gettingIds = async () => {
   const users = document.querySelectorAll(".usersList__item");
@@ -41,12 +38,10 @@ const gettingIds = async () => {
 
 const userIds = await gettingIds();
 
-if(!JSON.stringify(newIds) == !JSON.stringify(userIds)){
+if(JSON.stringify(newIds) != JSON.stringify(userIds)){
   updateUsers();
 }
 
-console.log(JSON.stringify(newIds))
-console.log(JSON.stringify(userIds))
 
 
 
