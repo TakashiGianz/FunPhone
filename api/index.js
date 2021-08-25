@@ -14,22 +14,27 @@ app.get("/api", (req, res) => {
       {
         name: "Fernando",
         avatar: "/img/fe.jpg",
+        id: 0,
       },
       {
         name: "Camila",
         avatar: "/img/pp.jpg",
+        id: 1,
       },
       {
         name: "Fabio",
         avatar: "/img/fabio.jpg",
+        id: 2,
       },
       {
         name: "Ellen",
         avatar: "/img/ellen.jpg",
+        id: 3,
       },
       {
         name: "Mariane",
         avatar: "/img/Mari.jpg",
+        id: 4,
       },
     ],
   });
