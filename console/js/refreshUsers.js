@@ -1,4 +1,4 @@
-import newUser from "./settingUsers.js";
+import newUser from "./createNewUser.js";
 
 const getUsers = async () => {
   const response = await fetch("http://localhost:3000/api", { method: "GET" });
@@ -6,6 +6,8 @@ const getUsers = async () => {
   const users = user.usersOn;
   return users;
 };
+
+// setInterval(getUsers, 1000)
 
 const usersArray = await getUsers();
 
@@ -15,7 +17,36 @@ const updateUsers = () => {
   }
 };
 
-updateUsers();
+updateUsers()
 
-const users = document.querySelectorAll(".usersList__item");
-users.forEach
+const gettingNewIds = async () => {
+  const newIds = []
+  for (let i = 0; i < usersArray.length; i++) {
+    newIds.push( usersArray[i].id );
+  }
+  return newIds;
+};
+
+const newIds = await gettingNewIds();
+
+
+const gettingIds = async () => {
+  const users = document.querySelectorAll(".usersList__item");
+  const userIds = [];
+  for (let i = 0; i < users.length; i++) {
+    userIds.push(users[i].getAttribute("data-id"));
+  }
+  return userIds;
+};
+
+const userIds = await gettingIds();
+
+if(!JSON.stringify(newIds) == !JSON.stringify(userIds)){
+  updateUsers();
+}
+
+console.log(JSON.stringify(newIds))
+console.log(JSON.stringify(userIds))
+
+
+
