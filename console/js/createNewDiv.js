@@ -1,4 +1,4 @@
-const newUser = (avatar, name, id) => {
+const createNewDiv = ({avatar, name, id}) => {
   const usersSection = document.querySelector(".usersList");
   const usersDiv = document.createElement("div");
   const usersImg = document.createElement("img");
@@ -17,4 +17,4 @@ const newUser = (avatar, name, id) => {
   usersDiv.appendChild(usersName);
 };
 
-export default newUser;
+export default createNewDiv;

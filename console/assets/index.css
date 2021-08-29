@@ -1,0 +1,15 @@
+.background {
+  background-color: var(--grey);
+}
+
+.indexTitle {
+  color: var(--white);
+  font-family: Poppins, sans-serif;
+}
+
+.playBtn {
+  background-image: url(img/Play_screen_logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
