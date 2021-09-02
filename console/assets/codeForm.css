@@ -75,6 +75,7 @@
   border-radius: 10%;
   width: 15rem;
   box-shadow: 0.5rem 0.5rem 2rem grey;
+  cursor: pointer;
 }
 
 .roomCode__button:hover {
