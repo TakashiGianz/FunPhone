@@ -3,13 +3,23 @@
 }
 
 .indexTitle {
+  position: absolute;
   color: var(--white);
+  opacity: .7;
   font-family: Poppins, sans-serif;
+  font-size: 5rem;
 }
 
+.playBtnBlock{
+  display: flex;
+  justify-content: center;
+}
 .playBtn {
-  background-image: url(img/Play_screen_logo.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: absolute;
   height: 100vh;
+  cursor: pointer;
+}
+
+.playBtn:hover {
+  opacity: .7;
 }
