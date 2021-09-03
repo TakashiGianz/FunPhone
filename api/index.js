@@ -7,6 +7,7 @@ app.use(cors());
 
 app.use("/", express.static("console"));
 
+
 app.get("/api", (req, res) => {
   res.json({
     sala: "22334455",
@@ -38,18 +39,6 @@ app.get("/api", (req, res) => {
       },
     ],
   });
-});
-
-app.post("/api", (req, res) => {
-  res.json({ nome: "Post" });
-});
-
-app.put("/api", (req, res) => {
-  res.json({ nome: "Put" });
-});
-
-app.delete("/api", (req, res) => {
-  res.json({ nome: "Delete" });
 });
 
 app.listen(port, () => {
