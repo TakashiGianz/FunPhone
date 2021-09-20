@@ -1,13 +1,13 @@
 import createNewDiv from "./createNewDiv.js";
 
 const codeBox = document.querySelector(".codeBox__code");
-const URL = "http://localhost:3000/api";
+const URL = "http://5532-187-75-47-172.ngrok.io/api";
 const UPDATE_INTERVAL_SECONDS = 1 
 
 const fetchNewRoom = async () => {
-  const response = await fetch(URL);
+  const response = await fetch(`${URL}/rooms`);
   const room = await response.json();
-  return room?.sala;
+  return room?.id;
 };
 
 const getRoom = async () => {
@@ -19,7 +19,7 @@ const getRoom = async () => {
 };
 
 const fetchUsersOn = async () => {
-  const response = await fetch(URL);
+  const response = await fetch(`${URL}/rooms/${codeBox.textContent}`);
   const user = await response.json();
   return user?.usersOn;
 };
