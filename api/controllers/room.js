@@ -54,25 +54,29 @@ export const getRoomUsers = (req, res) => {
 export const addNewUser = (req, res) => {
   const roomNumber = req.params.id;
   const userId = req.body.user;
-  const usersList = users.filter((user) => user.id.toString() === userId);
+  const usersList = users.filter((user) => user.name.toLowerCase() === userId.toLowerCase());
   const userExists = usersList.length > 0;
   if (userExists) {
     const roomList = getRoomById(roomNumber);
     const roomExists = roomList.length > 0;
     if (roomExists) {
       const isOnList =
-        roomList[0].usersOn.findIndex((user) => user.id.toString() === userId) >
+        roomList[0].usersOn.findIndex((user) => user.name.toLowerCase() === userId.toLowerCase()) >
         -1;
-      console.log(isOnList);
       if (!isOnList) {
         roomList[0].usersOn.push(usersList[0]);
       }
       res.json(roomList[0]);
     } else {
       res.json("Ok");
-      // TODO: Tratar erro
+      // TODO: Tratar erro, Objeto com erro.
     }
   } else {
+    users.push({
+        name: userId,
+        avatar: "/img/anonymous-avatar-icon-25.jpg",
+        id: new Date().getTime()
+    })
     res.json("Ok");
   }
 };
