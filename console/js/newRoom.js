@@ -1,7 +1,7 @@
 import createNewDiv from "./createNewDiv.js";
 
 const codeBox = document.querySelector(".codeBox__code");
-const URL = "http://5532-187-75-47-172.ngrok.io/api";
+const URL = "http://localhost:3000/api";
 const UPDATE_INTERVAL_SECONDS = 1 
 
 const fetchNewRoom = async () => {
