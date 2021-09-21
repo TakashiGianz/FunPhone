@@ -28,7 +28,7 @@ form.addEventListener("submit", async (e) => {
       const header = document.querySelector(".upperText");
       const errorMessage = document.createElement("h3");
       errorMessage.className = "errorMessage";
-      errorMessage.textContent = "Try Again";
+      errorMessage.textContent = "Room doesn't exist, try again!";
       header.appendChild(errorMessage);
     }
   }
